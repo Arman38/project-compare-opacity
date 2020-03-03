@@ -1,0 +1,23 @@
+.canvas_server_canvas{
+    width: 350px;
+    height: 350px;
+    box-shadow:4px 4px 8px black;
+    border-radius: 8px;
+}
+.canvas_server{
+   margin-top: 3rem;
+}
+.hiddenimage{
+    display: none;
+}
+.opccanvas{
+    margin:auto ;
+    transform: translate(15%);
+    position:relative
+}
+.slider{
+   position:absolute;
+    right:-30px;
+    top:50px;
+    
+}
