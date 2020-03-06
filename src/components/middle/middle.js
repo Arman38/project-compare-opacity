@@ -2,19 +2,25 @@ import React from "react"
 import Slider from 'react-rangeslider'
 import './middle.css'
 
-    const Middle = ({volume,handleOnChange,canvas2,onDropped,image2,file}) => {
+    const Middle = ({volume,handleOnChange,canvas2,image2,file}) => {
         return (
-            <div className="opccanvas">
+            <div className="opccanvas col-md-4 offset-md-4 col-12 ">
+              
                 <canvas 
                     ref = {canvas2} 
                     className="canvas_server_canvas middlecanvas" 
                     width="400" 
                     height = "400"
-                    onDragOver = {e=>e.preventDefault()}
-                    onDrop = {onDropped}
                 >  
                 </canvas>
-                <img ref = {image2} src = {file} width="350" height = "350" className="middle_img" />
+                <img
+                    ref = {image2}
+                    src = {file} 
+                    width="350" 
+                    height = "350" 
+                    className="middle_img" 
+                    alt="mid_img"
+                />
                 <Slider
                     min={0}
                     max={1}
@@ -25,6 +31,7 @@ import './middle.css'
                     onChange={handleOnChange}
                 />
             </div>
+           
         ) 
     }
 

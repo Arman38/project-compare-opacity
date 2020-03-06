@@ -1,7 +1,7 @@
-import React from "react"
+import React from "react";
 
-const Left = ({imag,canvas}) => {
-    return <div className="col-lg-3 offset-lg-1 col-sm-6">
+const Left = ({imag,canvas,imgSrc}) => {
+    return <div className="col-md-4 col-12">
             <canvas 
                 ref = {canvas} 
                 className="canvas_server_canvas"  
@@ -10,10 +10,12 @@ const Left = ({imag,canvas}) => {
             >
             <img 
                 ref = {imag} 
-                src = {"https://picsum.photos/536/354"} 
+                src = "https://firebasestorage.googleapis.com/v0/b/maps-6ec63.appspot.com/o/maps%2Fmap1.JPG?alt=media&token=ab5db3fc-938c-4165-8815-9b8ed53d2c35" 
                 className="hiddenimage"
+                alt="left_img"
             />
         </canvas>
+        
  </div>
 }
 
