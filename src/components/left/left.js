@@ -7,7 +7,6 @@ const Left = ({imag,canvas}) => {
                 className="canvas_server_canvas"  
                 width="400" 
                 height = "400"
-                draggable="true"
             >
             <img 
                 ref = {imag} 
